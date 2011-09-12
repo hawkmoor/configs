@@ -1,0 +1,10 @@
+background no
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer yes
+
+
+TEXT
+:: $kernel :: Uptime ${uptime_short} :: CPU ${cpu}% :: RAM $memperc% :: ADDR ${addr eth0} :: DWN ${totaldown eth0} :: Date ${time %a,%d-%#b-%Y} :: Time ${time %H:%M:%S} :: VOL $mixer% :: $mpd_smart 

@@ -1,0 +1,12 @@
+##### connection settings #####
+mpd_host = "localhost"
+mpd_port = "6600"
+mpd_music_dir = "/media/music/music"
+mpd_connection_timeout = "5"
+mpd_crossfade_time = "5"
+
+
+
+##### various settings #####
+default_place_to_search_in = "database"
+media_library_left_column = "A"

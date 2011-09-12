@@ -1,0 +1,1 @@
+/usr/share/aurora-pentadactyl-buftabs/buftabs.js

@@ -1,0 +1,1 @@
+/home/sean/dwm/config.h

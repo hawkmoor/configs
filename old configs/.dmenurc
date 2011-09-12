@@ -1,0 +1,7 @@
+#DMENU='dmenu -i -fn terminus -nb #000000 -nf #ffffff -sb #7a5ada -sf #ffffff' #gentoo colour
+
+DMENU='dmenu -i -fn -xos4-terminus-medium-r-*--12-*-*-*-*-*-iso10646-1 -nb #000000 -nf #ffffff -sb #1793d1 -sf #ffffff' #arch colour
+
+#DMENU='dmenu -i -fn terminus -nb #000000 -nf #ffffff -sb #990000 -sf #ffffff' #freebsd colour
+
+#DMENU='dmenu -i -fn terminus -nb #000000 -nf #999999 -sb #DA6F00 -sf #000000' #freebsd colour

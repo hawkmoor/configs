@@ -1,0 +1,54 @@
+source /home/sean/.pentadactyl/colors/neverland.penta
+set guioptions-=rlb
+set hintkeys=asdfg;lkjh
+set titlestring=Fx
+set showtabline=never
+set complete="b"
+set autocomplete=/ex/(bmarks),^(/|/ex/?)$
+set editor="urxvt -name URxvt -e vim -f -c ':set ft=perl'"
+set followhints=0
+set defsearch=d
+set maxitems=10
+set cpt=l
+set wildmode=full
+"set wildcase=smart
+set showstatuslinks=status
+set showmode
+set shellcmdflag="-c"
+set popups=tab
+set pageinfo=gfm
+"set newtab=adehjp
+"set more=off
+"set hinttimeout=5
+"set hintmatching="wordstartswith"
+"set hintinputs="label, value"
+"set insertmode=0
+"set laststatus=0
+"set wildignore=\.o$,^\..*\.s[a-z]{2}$
+"set wordseparators="[.,!?:;\\/\"^$%&?()[\]{}<>#*+|=~ _-])"
+
+javascript readabilityFootnotes = "true"
+
+
+"set noscript-forbid=bookmarklet,fonts,java,media,placeholder,plugins,silverlight,xslt
+"set noscriptlist=base
+set mapleader=","
+
+
+nmap d <Nop>
+nmap <C-h> <Nop>
+
+"nmap -b yy y
+
+nmap dd :tabclose<CR>
+nmap a :noscript toggletemp<CR>
+nmap A :noscript toggleperm<CR>
+nmap <Leader>q :qa!<CR>
+
+nmap <Leader>d :tabclose<CR>
+nmap <Leader>p :pa<CR>
+nmap <Leader>j :jumps<CR>
+nmap <Leader>O O<CR>
+nmap <Leader>m :um!<CR>
+
+" vim: set ft=vim:

@@ -1,0 +1,12 @@
+# Conky configuration for ScrotWM Bar
+
+##############################################
+#  Settings
+##############################################
+out_to_x no
+out_to_console yes
+update_interval 1.0
+total_run_times 0
+use_spacer none
+TEXT
+CPU - ${cpu cpu0}.00%   RAM - ${memperc}.00%   Uploads - ${upspeedf eth0}kb/s   Downloads - ${downspeedf eth0}kb/s ${if_mpd_playing} ${hr} $mpd_artist :: $mpd_title :: $mpd_album :: ($mpd_elapsed/$mpd_length)  $mpd_status $endif

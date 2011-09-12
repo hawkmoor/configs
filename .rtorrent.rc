@@ -1,0 +1,37 @@
+
+min_peers = 40
+max_peers = 130
+
+min_peers_seed = 10
+max_peers_seed = 50
+
+max_uploads = 15
+
+download_rate = 850
+upload_rate = 50
+
+directory = ~/bt/downloads
+session = ~/bt/.session
+
+schedule = watch_directory,5,5,load_start=~/bt/torrents/*.torrent
+schedule = tied_directory,5,5,start_tied=
+schedule = untied_directory,5,5,close_untied=
+schedule = low_diskspace,5,60,close_low_diskspace=100M
+
+port_range = 33130-33130
+
+check_hash = yes
+
+use_udp_trackers = yes
+dht = on
+dht_port = 33131
+peer_exchange = yes
+
+system.method.set_key = event.download.finished,move_complete,"execute=mv,-u,$d.get_base_path=,~/bt/complete/;d.set_directory=~/bt/complete/"
+
+# Enable the default ratio group.
+ratio.enable=
+ratio.min.set=200
+#ratio.max.set=200
+#ratio.upload.set=0M
+system.method.set = group.seeding.ratio.command, d.close=, d.erase=

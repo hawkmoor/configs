@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/ file:///usr/X11R6/share/openbox/menu.xsd">
+<menu id="root-menu" label="openbox3">
+    <item label="Terminal"><action name="Execute"><execute>urxvtc</execute></action></item>
+    <item label="File Manager"><action name="Execute"><execute>thunar</execute></action></item>
+    <item label="Web Browser"><action name="Execute"><execute>firefox</execute></action></item>
+    <item label="Editor"><action name="Execute"><execute>geany</execute></action></item>
+    <item label="Run Command"><action name="Execute"><execute>gmrun</execute></action></item>
+    <separator />
+    <menu id="client-list-combined-menu" />
+    <separator label="Applications"/>
+    <menu id="Accesories" label="Accesories">
+        <item label="7-Zip FM"><action name="Execute"><execute>7zFM</execute></action></item>
+        <item label="Archive Manager"><action name="Execute"><execute>file-roller</execute></action></item>
+        <item label="Disk Utility"><action name="Execute"><execute>palimpsest</execute></action></item>
+        <item label="Double Commander"><action name="Execute"><execute>/usr/bin/doublecmd</execute></action></item>
+        <item label="File Manager"><action name="Execute"><execute>exo-open --launch FileManager</execute></action></item>
+        <item label="Geany"><action name="Execute"><execute>geany</execute></action></item>
+         <item label="ePDFViewer"><action name="Execute"><execute>epdfview</execute></action></item>
+    </menu>
+    <menu id="Graphics" label="Graphics">
+        <item label="MComix"><action name="Execute"><execute>mcomix</execute></action></item>
+        <item label="Viewnior"><action name="Execute"><execute>viewnior</execute></action></item>
+    </menu>
+    <menu id="Audio &amp; Video" label="Audio &amp; Video">
+        <item label="DeaDBeeF"><action name="Execute"><execute>deadbeef</execute></action></item>
+        <item label="GNOME MPlayer"><action name="Execute"><execute>gnome-mplayer</execute></action></item>
+        <item label="Gnome Music Player Client"><action name="Execute"><execute>gmpc</execute></action></item>
+        <item label="Nero Linux"><action name="Execute"><execute>nero</execute></action></item>
+        <item label="gtkpod iPod Manager"><action name="Execute"><execute>gtkpod</execute></action></item>
+    </menu>
+    <menu id="Network" label="Network">
+        <item label="Firefox"><action name="Execute"><execute>firefox</execute></action></item>
+        <item label="Transmission"><action name="Execute"><execute>transmission-gtk</execute></action></item>
+    </menu>
+    <menu id="Settings" label="Settings">
+        <item label="Customize Look and Feel"><action name="Execute"><execute>lxappearance</execute></action></item>
+        <item label="File Manager"><action name="Execute"><execute>thunar-settings</execute></action></item>
+        <item label="Openbox Configuration Manager"><action name="Execute"><execute>obconf</execute></action></item>
+        <item label="Preferred Applications"><action name="Execute"><execute>exo-preferred-applications</execute></action></item>
+        <item label="Removable Drives and Media"><action name="Execute"><execute>thunar-volman-settings</execute></action></item>
+    </menu>
+    <menu id="System Tools" label="System Tools">
+        <item label="Bulk Rename"><action name="Execute"><execute>/usr/lib/Thunar/ThunarBulkRename</execute></action></item>
+        <item label="Htop"><action name="Execute"><execute>urxvtc -e htop</execute></action></item>
+        <item label="Open Folder with Thunar"><action name="Execute"><execute>Thunar</execute></action></item>
+        <item label="Oracle VM VirtualBox"><action name="Execute"><execute>VirtualBox</execute></action></item>
+        <item label="Thunar File Manager"><action name="Execute"><execute>Thunar</execute></action></item>
+        <item label="Urxvt"><action name="Execute"><execute>urxvt</execute></action></item>
+    </menu>
+    <separator />
+    <menu id="Openbox Settings" label="Openbox Settings">
+        <item label="Reconfigure Openbox"><action name="Reconfigure" /></item>
+        <item label="Openbox Configuration Manager"><action name="Execute"><execute>obconf</execute></action></item>
+        <item label="Configure Autostarted Applications"><action name="Execute"><execute>geany /home/sean/.config/openbox/autostart</execute></action></item>
+        <item label="Edit rc.xml"><action name="Execute"><execute>geany /home/sean/.config/openbox/rc.xml</execute></action></item>
+        <separator label="obmenugen settings"/>
+        <item label="Edit obmenugen configuration"><action name="Execute"><execute>geany /home/sean/.config/obmenugen/obmenugen.cfg</execute></action></item>
+        <item label="Edit obmenugen exclusions"><action name="Execute"><execute>geany /home/sean/.config/obmenugen/exclusions</execute></action></item>
+        <item label="Edit obmenugen schema"><action name="Execute"><execute>geany /home/sean/.config/obmenugen/obmenugen.schema</execute></action></item>
+    </menu>
+    <separator />
+        <item label="Exit"><action name="Execute"><execute>exitx</execute></action></item>
+</menu>
+</openbox_menu>
